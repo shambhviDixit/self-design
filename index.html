@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>SPARKLING FIREWORKS</title>
+   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+   <script src="https://unpkg.com/aframe-spe-particles-component@1.0.4/dist/aframe-spe-particles-component.min.js">
+   </script>
+
+</head>
+
+<body>
+   <a-scene id="scene">
+      <a-entity position="26 2 -2" spe-particles="
+      color:yellow,orange,red;
+      distribution:sphere;
+      randomise-velocity:true;
+      radius:2;
+      particle-count:850;
+      velocity:2;
+      velocity-spread:20;
+      drag:1;
+      max-age:6;
+      duration:-1;
+      blending:additive;
+      active-multiplier:800;
+      size:1,2,1,0;
+      ">
+      </a-entity>
+      <a-entity position="-16 -4 -2" spe-particles="
+      color:pink,red,purple;
+      distribution:sphere;
+      randomise-velocity:true;
+      radius:2;
+      particle-count:850;
+      velocity:2;
+      velocity-spread:20;
+      drag:1;
+      max-age:5;
+      duration:-1;
+      blending:additive;
+      active-multiplier:800;
+      size:1,2,1,0;
+      ">
+      </a-entity>
+      <a-entity position="16 -6 2" spe-particles="
+      color:green,blue,red;
+      distribution:sphere;
+      randomise-velocity:true;
+      radius:2;
+      particle-count:850;
+      velocity:2;
+      velocity-spread:20;
+      drag:1;
+      max-age:3;
+      duration:-1;
+      blending:additive;
+      active-multiplier:800;
+      size:1,2,1,0;
+      ">
+      </a-entity>
+      <a-entity position="0 1 0" spe-particles="
+color:red,violet,purple,blue;
+distribution:sphere;
+randomise-velocity:true;
+radius:2;
+particle-count:850;
+velocity:1;
+velocity-spread:20;
+drag:1;
+max-age:5;
+duration:-1;
+blending:additive;
+active-multiplier:1000;
+size:1,1,1,0;
+">
+      </a-entity>
+      <a-sky color="black">
+      </a-sky>
+      <a-camera position="0 0 30">
+
+      </a-camera>
+   </a-scene>
+
+</body>
+
+</html>
